@@ -1,0 +1,22 @@
+[package]
+name = "double-ratchet-lib"
+version = "0.1.0"
+authors = ["Exopteron <exopteron@protonmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hkdf = "0.11.0"
+integer-encoding = "3.0.2"
+aes-gcm-siv = "0.10.0"
+rand = "^0.6.0"
+hmac = "0.11.0"
+aes = "0.7.3"
+sha3 = "0.9.1"
+serde_json = "^1.0.59"
+serde = { version = "1.0", features = ["derive"] }
+x25519-dalek = { version = "1.1.1", features = ["serde"] }
+keyex_rand_core = { package = "rand_core", version = "0.5", features = ["getrandom","std"] }
+block-modes = "0.8.1"
+chacha20poly1305 = "0.8.1"
